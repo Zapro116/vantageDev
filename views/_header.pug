@@ -1,0 +1,32 @@
+header
+  nav.navbar.navbar-expand-lg.navbar-dark
+    a.navbar-brand.px-5(href='#')
+      img(src='/img/vantage.jpg' height='50px' width='60px' alt='')
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.uniq_no
+        li.nav-item
+          a.nav-link.p-3(href='/') Home
+        li.nav-item
+          a.nav-link.p-3(href='/about') About us
+        li.nav-item
+          a.nav-link.p-3(href='/blogs') Blog
+        li.nav-item
+          a.nav-link.p-3(href='/tours') Tours
+        li.nav-item
+          a.nav-link.p-3(href='/contact') Contact Us
+
+      ul.navbar-nav.ml-auto.nav-flex-icons
+        if user
+          li.nav-item.p-3
+            a.nav-link.nav__el--logout Log out
+          li.nav-item.p-3
+            a.nav-item(href='/me')
+              img.nav__user-img(src=`/img/users/${user.photo}` alt=`Photo of ${user.name}`)
+              span= user.name.split(' ')[0]
+        else
+          li.nav-item.p-3
+            a.nav-link(href='/login') Log in
+          li.nav-item.p-3
+            a.nav-link.nav__el--cta(href='/signup') Sign up

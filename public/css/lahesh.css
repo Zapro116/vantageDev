@@ -1,0 +1,76 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+#navbarNav .navbar-nav .active{
+  border-bottom: 3px solid white;
+}
+
+header {
+  background-color: transparent;
+  background-image: url(".../img/blog/blog1.jpg");
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-item .nav-link{
+  color: #00000!important;
+}
+
+.nava{
+  border-bottom: 3px solid transparent;
+  overflow:hidden;
+
+}
+
+.nava:hover{
+  border-bottom: 3px solid white;
+  overflow:hidden;
+
+}
+
+.ovr{
+  overflow:hidden;
+}
+
+i {
+  margin: 2rem 0 0 1.5rem;
+  position: fixed;
+  color: black;
+}
+
+
+.parallax1 {
+  background-image: url("/img/place/triund.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url("/img/place/triund4.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax {
+  background-image: url("/img/place/triund3.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foot{
+  background-color: #000;
+}

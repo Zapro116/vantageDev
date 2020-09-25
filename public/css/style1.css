@@ -1,0 +1,96 @@
+header nav {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#navbarNav .navbar-nav .active {
+  border-bottom: 3px solid white;
+}
+
+header nav {
+  background-color: black;
+}
+
+header nav .uniq_no li:nth-child(1) {
+  border-bottom: 3px solid white;
+  font-weight: 600;
+}
+
+.nava {
+  border-bottom: 3px solid transparent;
+}
+
+.nava:hover {
+  border-bottom: 3px solid white;
+}
+
+.ovr {
+  overflow: hidden;
+}
+
+.img1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.dest {
+  border-left: 3px solid transparent;
+}
+
+.dest:hover {
+  border-left: 3px solid firebrick;
+}
+
+.img2 {
+  width: 100%;
+  height: 100vh;
+}
+
+.img3 {
+  width: 100%;
+  height: 100vh;
+}
+
+.ab {
+  position: relative;
+  margin-top: -3rem;
+}
+
+.crd {
+  color: firebrick !important;
+}
+
+#crdde {
+  background-color: #ccc;
+}
+
+.fa:hover {
+  color: firebrick !important;
+}
+
+.myCard {
+  width: 100%;
+}
+
+.myCard:hover {
+  -webkit-box-shadow: 5px 5px 50px 5px rgba(255, 255, 255, 0.66);
+  -moz-box-shadow: 5px 5px 50px 5px rgba(255, 255, 255, 0.66);
+  box-shadow: 5px 5px 50px 5px rgba(255, 255, 255, 0.66);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  width: 100%;
+}
+
+.foot {
+  background-color: #000;
+}
+
+.footer {
+  background-color: #000!important;
+}

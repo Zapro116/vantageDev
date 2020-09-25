@@ -1,0 +1,61 @@
+extends base
+
+block head
+  link(rel="stylesheet", href="/css/hampta.css")
+
+block content
+  div
+    a(href='/tours')
+      i.fas.fa-circle.fa-3x
+      i.fas.fa-arrow-left.fa-2x.text-light.bg-transparent(style='margin: 2.45rem 0 0 2rem!important;')
+  section.parallax1
+  section
+    h1.display-2.text-center.bg-success.p-4.mx-4
+      b Hampta Pass Trek
+    .container.py-4
+      p.lead
+        | The Hampta Pass is one of the most stunning and beautiful treks of the Himalayas. The Hampta Pass offers breathtaking sights scenes of the two different sides of the Himalayas. On one side of the pass lies the lush green Kullu valley and on the other side is the stark opposite dessert valley of Lahaul. Hamta Pass lies at an altitude of 4270 m on the Pir Panjal range in the Himalayas. It is a small corridor between Lahaul&apos;s Chandra Valley and Kullu valley of Himachal Pradesh, India.
+  section.parallax2
+  section
+    h1.display-2.text-center.bg-success.p-4.mx-4
+      b About the Trek
+    .container.py-4
+      p.lead
+        | From the top, you will witness the magnificent view of a different world below, the beautiful yet deserted Lahaul. The panoramic sweep of the valley from the summit will be a sight that will not leave you forever. From Manali, you will be taken to Jobra and then to Chika located at a height of about 10,100 feet. The route will have a lush of greenery, River Rani and the mountainous stretches on one side. When you climb up to reach Balu ka Ghera from Chika, you can get a glimpse of the beautiful Dhauladhar Ranges that occupies the entire frame with meadows and flower-filled valleys. Next comes the Hampta Village where you can spend some time admiring the beauty of nature and discover the calmness of the valley. The final destination of the trek is the beautiful Chandra Tal, which is the lake in the Spiti part of the Lahaul and Spiti district of Himachal Pradesh. It is one of the most stunning lakes with clear blue waters, in the shape of a crescent. It treats your eyes with such a scenic route that beats away the exhaustion of the trek.
+  section.parallax3
+  section#book
+    h1.display-2.text-center.bg-success.p-4.mx-4
+      b Take the Trek
+    .container.py-4
+      p.lead.text-danger Packages starting @ Rs.7800
+      .row
+        .col-lg-6
+          h1 Hampta Pass trek itinerary
+          br
+          br
+          p
+            | DAY 1 - DELHI-MANALI- 530kms|12 hours
+            br
+            |             Day 2 - Manali &ndash; Jobra (Drive) &ndash; 2 hours | Trek from Jobra to Chika-2kms
+            br
+            |             Day 3 - Chika&ndash; Balu ka Ghera 8KMS TreK | 5hrs
+            br
+            |             Day 4 - Balu ka Gera &ndash; Siagoru and crossing Hampta Pass | 8hrs
+            br
+            |             Day 5 - Siagoru&ndash; Chatru and drive to Chandra Tal |4hrs
+            br
+            |             Day 6 - Drive from Chandra Tal to Manali via Rohtang Pas-DELHI
+            br
+            br
+        .col-lg-6
+          form(action='index.html' method='post')
+            .form-group
+              label(for='name') Name
+              input#name.form-control(type='text' placeholder='Full Name')
+            .form-group
+              label(for='email') Email
+              input#name.form-control(type='email' placeholder='Email address')
+            .form-group
+              label(for='number') Number
+              input#name.form-control(type='number' placeholder='Phone number')
+            button.btn.btn-success(type='submit' name='button') Submit

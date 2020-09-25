@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#navbarNav .navbar-nav .active {
+	border-bottom: 3px solid white;
+}
+
+.dest {
+	border-left: 3px solid transparent;
+}
+
+.dest:hover {
+	border-left: 3px solid firebrick;
+}
+header nav {
+	background-color: black;
+}
+
+header nav ul li:nth-child(5) {
+	border-bottom: 3px solid white;
+	font-weight: 600;
+}
+
+.nava {
+	border-bottom: 3px solid transparent;
+}
+
+.nava:hover {
+	border-bottom: 3px solid white;
+}
+
+fa:hover {
+	color: firebrick !important;
+}
+
+.btn .fas,
+.btn .fab,
+.btn .far {
+	margin-left: 3px;
+}
+
+h6 {
+	line-height: 1.7;
+}
+
+footer.page-footer {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+body {
+	background-image: url('../img/valley3.jpg');
+}
+
+.hidden {
+	display: none;
+}
+
+.ovr {
+	margin: 0 !important;
+}
+
+.btn.peach-gradient {
+	color: #fff !important;
+}
+
+.crd {
+	height: 25.4rem;
+}
+
+.foot {
+	background-color: #000;
+}

@@ -1,0 +1,62 @@
+extends base
+
+block head
+  script(src='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js')
+  link(href='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet')
+  link(rel='stylesheet' href='/css/tour.css')
+  //- link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+
+
+block content
+  include _alert
+  .container-fluid
+    .row.p-5
+      each tour in tours
+        .col-xl-4.col-md-6.col-12
+          .card.my-3
+            .view.overlay
+              img.card-img-top(src=`/img/tours/${tour.imageCover}`, alt=`${tour.name}`)
+              a(href='#!')
+            .mask.rgba-white-slight
+            .card-body
+            h4.card-title.px-4= tour.name
+            h5.card-item.px-4.upp
+              span.badge.badge-dark= `${tour.difficulty} ${tour.duration}-day tour`
+            p.card-text.px-4= tour.summary
+            ul.px-4(class='list-group list-group-flush list-unstyled')
+              li  
+                .row
+                  .col-6
+                    i(class="fa fa-map-marker" aria-hidden="true")
+                    | 
+                    span= tour.startLocation.description
+                  .col-6
+                    i(class="far fa-flag")
+                    | 
+                    span= `${tour.locations.length} stops`
+              li  
+                .row
+                  .col-6
+                    i(class="fas fa-calendar-week" aria-hidden="true")
+                    | 
+                    span=tour.startDates[0].toLocaleString('en-us', {month: 'long', year: 'numeric'})
+                  .col-6
+                    i(class="far fa-user")
+                    | 
+                    span= `${tour.maxGroupSize} people`
+            .card-footer.mt-3
+              .row
+                .col-xl-7.col-md-7.col-sm-6
+                  h5
+                    b
+                     span= `$${tour.price}`
+                    | 
+                    span per person 
+                  h5 
+                    b
+                      span= tour.ratingsAverage
+                    | 
+                    span= `rating (${tour.ratingsQuantity})`
+                .col-xl-4.col-md-4
+                  a.btn.btn-primary(href=`/tour/${tour.slug}`) Details

@@ -1,0 +1,105 @@
+extends base
+
+block head
+  link(rel="stylesheet", href="/css/chandrishilla.css")
+
+block content
+  div
+    a(href='/tours')
+      i.fas.fa-circle.fa-3x
+      i.fas.fa-arrow-left.fa-2x.text-light.bg-transparent(style='margin: 2.45rem 0 0 2rem !important;')
+  section.parallax1
+  section
+    h1.display-2.text-center.bg-success.p-4.mx-4
+      b Chandrishilla Trek
+    .container.py-4
+      h3
+        b Chandrishilla Preak - Deoriatal :
+      p.lead
+        | Chopta Chandrashila Deoria Tal trekking tour promises refreshing and
+        | heart filled pleasure which makes the destination so attractive to
+        | millions of visitors throughout the year. Chopta is a small region of
+        | meadows and evergreen forest area which is a part of Kedarnath
+        | wildlife sanctuary located in Uttarakhand state. The reason for its
+        | popularity is the lovely campsites, where every site is unique in its
+        | own way and does not match the beauty with any other campsites in the
+        | journey
+      br
+      br
+      h3
+        b Chopta - Tungnath - Chandrishilla Trek :
+      p.lead
+        | Chopta will be the starting point of the trek. Travellers will be
+        | taken to the starting point of trail at morning. It&apos;s a 3 hours trek
+        | to Tungnath Mahadev temple(World&apos;s highest shiva temple) and 1.5 hours
+        | more to Chandrishilla Peak as the trail is moderately difficult at
+        | some places. You&apos;ll have a 360 degree view of Chaukhamba Peak from
+        | Chandrishilla top and it is the only hike with this level of altitude
+        | variation in just few hours.
+      br
+      br
+      h3
+        b Ukhimat - Deoriatal - Chopta Trek :
+      p.lead
+        | The trek starts from Sari village few Km away from Ukhimat. It&apos;s a 2
+        | hour terk for an average person. Trek route delights in a windy trail
+        | through rich forests, snow-laden trail with patches of green during
+        | the summer season are to come across and you can also witness several
+        | peaks and ranges. The base camp on the trek comes with Deoriatal. The
+        | beauty of this place can&apos;t be expresssed in words and the snow covered
+        | chaukhamba peak is an add on beauty to it. We advise one day camp near
+        | deoriatal at our camps and travel to chopta the next day though it can
+        | be modified accordingly.
+  section.parallax2
+  section
+    h1.display-2.text-center.bg-success.p-4.mx-4
+      b About the Trek
+    .container.py-4
+      p.lead
+        | Chopta will be the starting point of the trek. Travellers will be
+        | taken to the starting point of trail at morning. The distance coverd
+        | in this trek is around 17 km from our campsite. The trek leads through
+        | beautiful forests and after half way walking you reach the beautiful
+        | meadows (Rohini bugyal) usually it used to be a 2 days trek till 2016
+        | with a one night hault at Rohini bugyal but because government has
+        | restricted camping in that area so we cover it in one day. If a person
+        | is physically fit so he/she can cover this trek in 7 hours after
+        | taking some small haults.
+  section.parallax3
+  section#book
+    h1.display-2.text-center.bg-success.p-4.mx-4
+      b Take the Trek
+    .container.py-4
+      p.lead.text-danger Packages starting @ Rs.7800
+      .row
+        .col-lg-6
+          h1 Hampta Pass trek itinerary
+          br
+          br
+          p
+            | DAY 1 - DELHI-MANALI- 530kms|12 hours
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Day 2 - Manali &ndash; Jobra (Drive) &ndash; 2 hours | Trek from Jobra to
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Chika-2kms
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Day 3 - Chika&ndash; Balu ka Ghera 8KMS TreK | 5hrs
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Day 4 - Balu ka Gera &ndash; Siagoru and crossing Hampta Pass | 8hrs
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Day 5 - Siagoru&ndash; Chatru and drive to Chandra Tal |4hrs
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Day 6 - Drive from Chandra Tal to Manali via Rohtang Pas-DELHI
+            br
+            br
+        .col-lg-6
+          form(action='index.html' method='post')
+            .form-group
+              label(for='name') Name
+              input#name.form-control(type='text' placeholder='Full Name')
+            .form-group
+              label(for='email') Email
+              input#name.form-control(type='email' placeholder='Email address')
+            .form-group
+              label(for='number') Number
+              input#name.form-control(type='number' placeholder='Phone number')
+            button.btn.btn-success(type='submit' name='button') Submit

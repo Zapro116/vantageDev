@@ -1,0 +1,87 @@
+extends base
+
+block head
+  link(rel="stylesheet", href="/css/dayara.css")
+
+block content
+  div
+    a(href='/tours')
+      i.fas.fa-circle.fa-3x
+      i.fas.fa-arrow-left.fa-2x.text-light.bg-transparent(style='margin: 2.45rem 0 0 2rem !important;')
+  section.parallax1
+  section
+    h1.display-2.text-center.bg-success.p-4.mx-4
+      b Dayara Bugyal Trek
+    .container.py-4
+      p.lead
+        | Dayara and Bugyal Trek is one of the best trekking expeditions ever
+        | with a perfect mix of enviroment ideal for a Himalayan trek. It
+        | includes alluring trails of forests covered with snow, beautiful
+        | campsites, primordial villages and towns, thrilling climbs to high
+        | points, breathtaking views of the peaks and few of the best alpine
+        | meadows of Uttarakhand. One of the most popular spots that you can
+        | visit during this trek is Barnala Tal which is situated around the
+        | captivating Oak Tree forest. A road trip to Harsil and Gangotri is
+        | also possible and is real fun. Though the best season to visit the
+        | Dayara Bugyal is from May to November, but people usually visit this
+        | place in winters especially because it is the time when the path is
+        | covered with snow and provides an immensely breathtaking view. The
+        | chilliness of this place enhances the view of the adobe.
+  section.parallax2
+  //
+    <section>
+    <h1 class="display-2 text-center bg-success p-4 mx-4">
+    <b>About the Trek</b>
+    </h1>
+    <div class="container py-4">
+    <p class="lead">
+    Chopta will be the starting point of the trek. Travellers will be
+    taken to the starting point of trail at morning. The distance coverd
+    in this trek is around 17 km from our campsite. The trek leads through
+    beautiful forests and after half way walking you reach the beautiful
+    meadows (Rohini bugyal) usually it used to be a 2 days trek till 2016
+    with a one night hault at Rohini bugyal but because government has
+    restricted camping in that area so we cover it in one day. If a person
+    is physically fit so he/she can cover this trek in 7 hours after
+    taking some small haults.
+    </p>
+    </div>
+    </section>
+    <section class="parallax3"></section>
+  section#book
+    h1.display-2.text-center.bg-success.p-4.mx-4
+      b Take the Trek
+    .container.py-4
+      p.lead.text-danger Packages starting @ Rs.7800
+      .row
+        .col-lg-6
+          h1 Hampta Pass trek itinerary
+          br
+          br
+          p
+            | DAY 1: DELHI-DEHRADUN-250KMS|5 HRS|| DEHRADUN-BARSU-185KM|
+            | 6HOURS
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;DAY 2: Trek from Barsu - Barnala (4 hours)
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;DAY 3: Trek from Barnala - Dayara Bugyal (5 kms)
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;DAY 4 : Trek from Dayara Bugyal - Bakaria Top - Dayara Bugyal
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&ndash;Barnala
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;DAY 5: BARNALA-BARSU and RETURN TRIP BARSU-DEHRADUN-DELHI
+            br
+            br
+        .col-lg-6
+          form(action='index.html' method='post')
+            .form-group
+              label(for='name') Name
+              input#name.form-control(type='text' placeholder='Full Name')
+            .form-group
+              label(for='email') Email
+              input#name.form-control(type='email' placeholder='Email address')
+            .form-group
+              label(for='number') Number
+              input#name.form-control(type='number' placeholder='Phone number')
+            button.btn.btn-success(type='submit' name='button') Submit
+

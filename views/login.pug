@@ -1,0 +1,25 @@
+extends base1
+
+block content
+  .row.w-100.justify-content-center.mt-5
+    .col-md-4.col-12
+      .card
+        form.text-center.form.form--login.border.border-light.p-5(method='POST')
+          p.h4.mb-4 Sign in
+          input#email.form-control.mb-4(type='email' name='email' placeholder='E-mail')
+          input#password.form-control.mb-4(type='password' name='password' placeholder='Password')
+          .d-flex.justify-content-around
+            div
+              .custom-control.custom-checkbox
+                input#defaultLoginFormRemember.custom-control-input(type='checkbox')
+                label.custom-control-label(for='defaultLoginFormRemember') Remember me
+            div
+              a(href="") Forgot password?
+          button.btn.btn-info.btn-block.my-4(type='submit')
+            | Sign in
+          p
+            | Not a member?
+            |
+            a(href='/signup') Register
+
+

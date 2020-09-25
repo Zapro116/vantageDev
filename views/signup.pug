@@ -1,0 +1,22 @@
+extends base1
+
+block content
+  .row.w-100.justify-content-center
+    .col-md-4.col-10
+      .card.mt-5
+        // Default form register
+        form.text-center.border.form.border-light.p-5(method='POST')
+          p.h4.mb-3 Sign up
+          .form-row.mb-2
+            .col
+              input#name.form-control(type='text' name='name' placeholder='Full name')
+          input#email.form-control.mb-2(type='email' name='email' placeholder='Enter email')
+          input#password.form-control.mb-2(type='password' name='password' placeholder='Enter password' aria-describedby='defaultRegisterFormPasswordHelpBlock')
+          input#passwordConfirm.form-control(type='password' name='passwordConfirm' placeholder='Enter password again' aria-describedby='defaultRegisterFormPasswordHelpBlock')
+          small#defaultRegisterFormPasswordHelpBlock.form-text.text-muted.mb-3
+            | At least 8 characters and 1 digit
+          button.btn.btn-info.my-4.btn-block(type='submit')
+            | Sign Up
+          span.my-2
+            | Already a member? 
+            a(href='/login') Login

@@ -1,0 +1,265 @@
+extends base
+
+block head
+  link(rel="stylesheet", href="/css/style1.css")
+
+block content
+  include _alert
+  .ovr
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+      li(data-target='#carouselExampleIndicators' data-slide-to='1')
+      li(data-target='#carouselExampleIndicators' data-slide-to='2')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100.img1(src='img/place/vikas-meena-YiOZD8EjQBc-unsplash.jpg' alt='First slide')
+        .ab
+          .carousel-caption.d-none.d-md-block.my-5.py-5
+            h2.display-2 Uttarakhand
+            p.lead Devbhoomi welcomes you...!!!
+      .carousel-item
+        img.d-block.w-100.img2(src='img/place/tosh.jpg' alt='Second slide')
+        .ab
+          .carousel-caption.my-5.py-5
+            h2.display-2 Himachal
+            p.lead It&apos;s Himachal calling...!!!
+      .carousel-item
+        img.d-block.w-100.img3(src='img/place/leh.jpg' alt='Third slide')
+        .ab
+          .carousel-caption.d-none.d-md-block.my-5.py-5
+            h2.display-2.h2.text-center Kashmir and Laddhak
+            p.lead
+              | Beauty of Kashmir can&apos;t be compared to whole world...!!!
+    a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+  .jumbotron.mb-0.cyan
+  #crdde.container-fluid
+    .py-5
+      .container.py-5
+        h1.text-center.pt-5
+          | Trips personally suggested 
+          br
+          | by founders :
+        h3
+          p.lead.text-center
+            | Here are some Treks which we personally marked as most
+            | beautiful.
+        h6.text-center
+          | &quot; Duration is from Delhi to Delhi and there might be variaton in
+          | price of some treks&quot;
+      .container.fluid
+        .card-deck
+          .col-lg-4.col-md-4.col-12.pb-3
+            .card.myCard
+              img.card-img-top(src='img/place/chandrishilla.jpg' alt='Card image cap')
+              a.lead.px-3.crd(href='#') Starting @ Rs.6500 
+              .card-body
+                h5.card-title
+                  | Chandrashilla Peak with/without Deoriatal
+                  br
+                  | Rudraprayag,
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Uttarakhand
+                p.card-text
+                  | This is one of the very few trek in which you can reach to
+                  | an elivation of more than 4,500meter in just 3-4 hours and
+                  | complete the whole trek in 7-8 hours. If you add Deoriatal
+                  | to this package trust us this will be one of the most
+                  | memorable trip.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+                .rating_days.d-flex.justify-content-between
+                  span.d-flex.justify-content-center.align-items-center
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    a.crd(href='#') (15 Review)
+                  .days
+                    i.fa.fa-clock-o.crd
+                    a.crd(href='#') 4-6 Days
+          .col-lg-4.col-md-4.col-12.pb-3
+            .card.myCard
+              img.card-img-top(src='img/place/malana.jpg' alt='Card image cap')
+              a.lead.px-3.crd(href='#') Starting @ Rs.6500 
+              .card-body
+                h5.card-title
+                  | Kasol(
+                  i Mini Israel of India
+                  | ),
+                  br
+                  | Kullu, Himachal
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Pradesh
+                p.card-text
+                  | Kasol is in the district Kullu of the Indian state of
+                  | Himachal Pradesh.It is situated in Parvati Valley, on the
+                  | banks of the Parvati River and is base for Malana, Tosh
+                  | and Kheerganga.Kasol is hotspot for bagpackers.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+                .rating_days.d-flex.justify-content-between
+                  span.d-flex.justify-content-center.align-items-center
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    a.crd(href='#') (15 Review)
+                  .days
+                    i.fa.fa-clock-o.crd
+                    a.crd(href='#') 4-6 Days
+          .col-lg-4.col-md-4.col-12.pb-3
+            .card.myCard
+              img.card-img-top(src='img/vof.jpg' alt='Card image cap')
+              a.lead.px-3.crd(href='#') Starting @ Rs.7500 
+              .card-body
+                h5.card-title
+                  | Valley Of Flowers(World heritage site), Chamoli district,
+                  | Uttarakhand India
+                p.card-text
+                  | Valley of flowers is in itself a UNESCO World Heritage
+                  | Site exhibiting plush meadows. The trek goes through dense
+                  | forests, along with Pushpawati river and can be reached by
+                  | crossing many bridges, glaciers and waterfalls on the way.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+                .rating_days.d-flex.justify-content-between
+                  span.d-flex.justify-content-center.align-items-center
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    a.crd(href='#') (15 Review)
+                  .days
+                    i.fa.fa-clock-o.crd
+                    a.crd(href='#') 4-6 Days
+          .col-lg-4.col-md-4.col-12.pb-3
+            .card.myCard
+              img.card-img-top(src='img/place/hampta.jpg' alt='Card image cap')
+              a.lead.px-3.crd(href='#') Price starts @Rs.8000
+              .card-body
+                h5.card-title
+                  | Hampta Pass 
+                  br
+                  | kullu, Himachal Pradesh
+                p.card-text
+                  | Hamta Pass lies at an altitude of 4270 m (14039 ft) on the
+                  | Pir Panjal range in the Himalayas. It is a small corridor
+                  | between Lahaul&apos;s Chandra Valley and Kullu valley. 
+                  br
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;The nearest hub is Manali, in Himachal Pradesh. Most
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;itineraries include transport from Manali to Jobri, from
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;where the trek begins. Depending on the trek itinerary, it
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;takes 3&ndash;4 days to complete the trek.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+                .rating_days.d-flex.justify-content-between
+                  span.d-flex.justify-content-center.align-items-center
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    a.crd(href='#') (15 Review)
+                  .days
+                    i.fa.fa-clock-o.crd
+                    a.crd(href='#') 5 Days
+          .col-lg-4.col-md-4.col-12.pb-3
+            .card.myCard
+              img.card-img-top(src='img/place/db%20mazy%20be.jpg')
+              a.lead.px-3.crd(href='#') Price starts @Rs 7000
+              .card-body
+                h5.card-title
+                  | Dayara Bugyal(easy trek) 
+                  br
+                  | Uttarkashi, Uttrakhand
+                p.card-text
+                  | Dayara Bugyal, is at an elevation of 3,408 metres (11,181
+                  | ft). The beautiful meadows are developed into ski slopes
+                  | covering an area of 28 square kilometres .It has also been
+                  | planned as a skiing resort.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+                .rating_days.d-flex.justify-content-between
+                  span.d-flex.justify-content-center.align-items-center
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    a.crd(href='#') (20 Review)
+                  .days
+                    i.fa.fa-clock-o.crd
+                    a.crd(href='#') 5 Days
+          .col-lg-4.col-md-4.col-12.pb-3
+            .card.myCard
+              img.card-img-top(src='img/place/Kedar%202.jpg' alt='Card image cap')
+              a.lead.px-3.crd(href='#') Price starts @Rs 7000
+              .card-body
+                h5.card-title
+                  | Kedarkanth 
+                  br
+                  | Uttarkashi, Uttrakhand
+                p.card-text
+                  | Kedarkantha is a mountain peak of the Himalayas in
+                  | Uttarakhand, India. Its elevation is 12,500 ft.It is one
+                  | of the most popular winter trek with snow all over and
+                  | with a view of beautiful medows in summers.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+                .rating_days.d-flex.justify-content-between
+                  span.d-flex.justify-content-center.align-items-center
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    i.fa.fa-star.crd
+                    a.crd(href='#') (8 Review)
+                  .days
+                    i.fa.fa-clock-o.crd
+                    a.crd(href='#') 6 Days
+      .row
+        .col-lg-12
+          .more_place_btn.text-center
+            a.btn.btn-danger.my-5.px-4.py-2(href='/destination') More Places
+  .recent_trip_area.my-5
+    .container
+      .row.justify-content-center
+        .col-lg-6
+          .section_title.text-center.mb_70
+            h3.p-3 Recent Trips
+      .row.justify-content-center
+        .col-lg-4.col-md-6.col-sm-9
+          .single_trip
+            .thumb
+              img.img-thumbnail(src='img/place/db%20mazy%20be.jpg' alt='')
+            .info
+              .date
+                span May, 2020
+              a(href='Blog/Dayara.html')
+                h3 Dayara Bugyal
+        .col-lg-4.col-md-6.col-sm-9
+          .single_trip
+            .thumb
+              img.img-thumbnail(src='img/trip/Triund%202.jpg' alt='')
+            .info
+              .date
+                span January, 2020
+              a(href='Blog/lahesh.html')
+                h3 Lahesh Caves with Triunt trek
+        .col-lg-4.col-md-6.col-sm-9
+          .single_trip
+            .thumb
+              img.img-thumbnail(src='img/place/chandrishilla.jpg' alt='')
+            .info
+              .date
+                span Oct, 2019
+              a(href='Blog/chandrishilla.html')
+                h3 Chandrishilla Deoriatal
+

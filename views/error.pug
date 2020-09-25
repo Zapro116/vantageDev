@@ -1,0 +1,11 @@
+extends base
+
+block head
+  link(rel="stylesheet", href="/css/style1.css")
+
+block content
+  .container-fluid
+    .jumbotron.my-2
+      h2.heading-secondary.heading-secondary--error Uh oh! Something went wrong!   
+      h2.error__emoji 😢 🤯
+      .error__msg= msg

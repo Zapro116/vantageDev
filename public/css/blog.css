@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  background-color: black;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 14rem;
+}
+
+.ron {
+  border-radius: 10rem;
+}
+
+header nav ul li:nth-child(3) {
+  border-bottom: 3px solid white;
+  font-weight: 600;
+}
+
+.img {
+  height: 95vh;
+  width: 100%;
+}
+
+.ab {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))!important;
+}
+
+.foot {
+  background-color: #000;
+}

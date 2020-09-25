@@ -1,0 +1,15 @@
+.nb {
+  margin-left: 1rem;
+}
+
+.ni {
+  margin: 0.3rem 0.8rem;
+}
+
+body {
+  background-image: url('/img/foodbg.jpg');
+}
+
+.foot {
+  background-color: #000;
+}

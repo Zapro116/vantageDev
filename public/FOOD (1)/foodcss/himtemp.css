@@ -1,0 +1,125 @@
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    column-gap: 5px;
+    content: "";
+    display: table;
+    clear: both;
+  }
+   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    .column p{
+      padding-left: 10%;
+    }
+  } 
+  
+  .first h1{
+      font-family: 'Bree Serif', serif;;
+    padding-left: 10%;
+    font-size: 60px;
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    .first h1 {
+      font-size: 40px;
+    }
+    
+  } 
+  
+  @media screen and (max-width: 800px) {
+    .first h1 {
+      font-size: 50px;
+    }
+    
+  } 
+  .column h1{
+      margin: 3px;
+    font-family: 'Bree Serif', serif;;
+    font-size: 30px;
+    color: white;
+    padding-left: 10%;
+  }
+  .column img{
+    width: 50%;
+    height: 30%;
+    padding-left: 20%;
+  }
+  .column p{
+    margin: 1px;
+    width: 70%;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    color: white;
+    
+  }
+  .content h1{
+    margin: 3px;
+      font-family: 'Bree Serif', serif;;
+      font-size: 30px;
+      color: white;
+      padding-left: 10%;
+  }
+  .content p{
+    margin: 3px;
+    width: 70%;
+      font-family: 'Courgette', cursive;
+      font-size: 20px;
+      color: white;
+      padding-left: 10%;
+  }
+  .wrapper{
+    width: 90%;
+  padding-left: 10%;
+  padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  
+  }
+  @media screen and (max-width:800px){
+    .single-img{
+      flex: 50%;
+      max-width: 50%;
+    }
+    
+  }
+  @media screen and (max-width:600px){
+    .single-img{
+      flex: 100%;
+      max-width: 70%;
+    }
+  }
+  .single-img{
+    margin: 3px;
+    width: 26%;
+    height: 300px;
+  
+  }
+  .single-img img{
+    
+    width: 100%;
+    height: 100%;
+  }
+  .last p{
+    padding-top: 2%;
+    width: 80%;
+  font-family: 'Courgette', cursive;
+      font-size: 20px;
+      color: white;
+      padding-left: 10%;
+  }
+  body,html{
+    background:url("https://images.wallpaperscraft.com/image/leaves_plant_green_dark_120418_3024x3588.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  

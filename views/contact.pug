@@ -1,0 +1,63 @@
+extends base
+
+block head
+  link(rel='stylesheet' href='/css/contact.css')
+
+
+block content
+  include _alert
+  .ovr
+    .container-fluid.mb-3.py-2(style='opacity:0.9')
+      .row.mt-4
+        .col-md-12
+          .card.pb-5
+            .card-body
+              .container
+                section.section
+                  h2.font-weight-bold.text-center.h1.my-5 Contact us
+                  p.text-center.grey-text.mb-5.mx-auto.w-responsive
+                    | For any inquie or problem you are face you can type it out below or contact us on the given number at right hand side.
+                  .row.pt-5
+                    .col-md-8.col-xl-9
+                      form(method='post')
+                        .row
+                          .col-md-6
+                            .md-form
+                              input#contact-name.form-control(type='text',name='name')
+                              label(for='contact-name') Your name
+                          .col-md-6
+                            .md-form
+                              input#contact-email.form-control(type='email',name='email')
+                              label(for='contact-email') Your email
+                        .row
+                          .col-md-12
+                            .md-form
+                              input#contact-Subject.form-control(type='text',name='subject')
+                              label(for='contact-Subject') Subject
+                        .row
+                          .col-md-12
+                            .md-form
+                              textarea#contact-message.md-textarea.form-control(type='text' rows='5',name='msg')
+                              label(for='contact-message') Your message
+                        .text-center.text-md-left.my-4
+                          button#send.btn.peach-gradient(type='submit') Send
+                          blockquote#bq.blockquote.peach-gradient.hidden
+                            p.bq-title Your response has been recorded
+                    .col-md-4.col-xl-3
+                      ul.contact-icons.text-center.list-unstyled
+                        li
+                          i.fas.fa-map-marker.fa-2x.orange-text
+                          p New Delhi, Delhi, India
+                          p Ghaziabad,UP, India
+                          // -   <p>Haldwani,Uttrakhand, India</p>   -
+                          p Bhubneshwar,Orissa, India
+                        br
+                        br
+                        li
+                          i.fas.fa-phone.fa-2x.orange-text
+                          p +91 7838690429
+                        br
+                        br
+                        li
+                          i.fas.fa-envelope.fa-2x.orange-text
+                          p conquerthehimalayas@gmail.com

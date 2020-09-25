@@ -1,0 +1,223 @@
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ajmiles.files.wordpress.com/2014/10/img_3449.jpg");
+ top: 0;
+  /* Set a specific height */
+  height: 55%;
+
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Acme', sans-serif;
+
+    font-family: 'Satisfy', cursive;
+
+    font-family: 'Gentium Basic', serif;
+
+
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.first h1{
+ font-size: 50px;
+ text-align: center;
+ font-family: 'Lobster', cursive;
+ font-family: 'Acme', sans-serif;
+ color: white;
+
+}
+.first {
+  background-color: black;
+  height: 20%;
+  top:0;
+  padding-top: 2px;
+}
+@media screen and (max-width: 800px) {
+ .first h1{
+    font-size: 40px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .first h1 {
+    font-size: 30px;
+  }
+}
+.second p{
+  font-size: 25px;
+  width: 70%;
+  padding-left: 15%;
+ text-align: center;
+font-family: 'Lobster', cursive;
+font-family: 'Acme', sans-serif;
+color: balck;
+}
+@media screen and (max-width: 800px) {
+  .second p{
+     font-size: 18px;
+   }
+ }
+ 
+ 
+ @media screen and (max-width: 600px) {
+   .second p {
+     font-size: 15px;
+     width: 80%;
+     padding-left: 10%;
+   }
+ }
+.second{
+  background-color: white;
+  padding-top: 1px;
+
+}
+.third img{
+  width: 70%;
+  padding-left: 15%;
+  height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .third img{
+     height: 60%;
+   }
+ }
+ 
+ 
+ @media screen and (max-width: 600px) {
+   .third img{
+     width: 80%;
+     padding-left: 10%;
+     height: 80%;
+   }
+ }
+.image2 img{
+  width: 70%;
+  height: 80%;
+  padding-left: 15%;
+}
+@media screen and (max-width: 800px) {
+  .image2 img{
+     height: 60%;
+   }
+ }
+ 
+ 
+ @media screen and (max-width: 600px) {
+   .image2 img{
+     width: 80%;
+     padding-left: 10%;
+     height: 80%;
+   }
+ }
+.third{
+  background-color: white;
+  padding-top: 1px;
+  height: 70%;
+}
+.fourth h2, p{
+  font-size: 25px;
+  width: 70%;
+  padding-left: 15%;
+ text-align: center;
+ font-family: 'Lobster', cursive;
+ font-family: 'Acme', sans-serif;
+ color: black;
+}
+@media screen and (max-width: 800px) {
+  .fourth p{
+     font-size: 18px;
+   }
+ }
+ 
+ 
+ @media screen and (max-width: 600px) {
+   .fourth  p{
+     font-size: 15px;
+     width: 80%;
+     padding-left: 10%;
+   }
+ }
+.fourth{
+  background-color : white;
+}
+.fifth h2 ,p{
+
+    font-size: 25px;
+    width: 70%;
+    padding-left: 15%;
+   text-align: center;
+    font-family: 'Lobster', cursive;
+    font-family: 'Acme', sans-serif;
+    color: black;
+  }
+  @media screen and (max-width: 800px) {
+    .fifth p{
+       font-size: 18px;
+     }
+   }
+   
+   
+   @media screen and (max-width: 600px) {
+     .fifth  p{
+       font-size: 15px;
+       width: 80%;
+       padding-left: 10%;
+     }
+   }
+
+.hero-img {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images-na.ssl-images-amazon.com/images/I/61SHOr-vbjL._AC_SX466_.jpg");
+  height: 50%;
+  padding-top: 1px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-txt {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .hero-txt {
+     font-size: 28px;
+   }
+ }
+ 
+ 
+ @media screen and (max-width: 600px) {
+   .hero-txt {
+     font-size: 25px;
+    
+   }
+ }

@@ -1,0 +1,134 @@
+extends base
+
+block head
+  link(rel="stylesheet", href="/css/about.css")
+  script(src="/js/about.js")
+
+block content
+  include _alert
+  .ovr.w-100
+    section.sec1.ovr.w-100.container-fluid
+      .text-center
+        h1.display-2.h2
+          b Conquer the Himalayas
+    .py-3.pt-5.no-margin.subs(style='background-color: #266bff;')
+      form(method='post' style='background-color: #266bff;')
+        .row.w-100.no-margin(style='background-color: #266bff;')
+          .col-md-4
+            p.lead.p-3.pl-5(style='font-size: 150%;')
+              b Subscribe for trek updates
+          .col-md-4
+            input.form-control.p-3.mt-4(type='email' name='email' value='' placeholder='Enter your email')
+          .col-md-4
+            button.form-control.mt-4.p-2.mb-1.btn.text-light(type='submit' name='button' style='background-color: #004bed;')
+              | Submit
+    #myCarousel.carousel.ovr.w-100.slide.sec2.py-5(data-ride='carousel')
+      .carousel-inner.row.w-100.mx-auto
+        .carousel-item.col-md-4.active
+          .card.testimonial-card
+            .card-up.sunny-morning-gradient(style='height: 12rem; border-radius: 0 4rem;')
+            .avatar.mx-auto
+              img.rounded-circle.mx-auto.card-img-overlay.img-responsive(src='https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg' style='height: 200px;' alt='Example photo')
+            .card-body
+              h4.card-title.mt-1.pt-3.pl-3 John Doe
+              hr
+              p
+                i.fas.fa-quote-left
+                |  Lorem ipsum dolor sit amet,
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;consectetur adipisicing elit. Eos, adipisci.
+        .carousel-item.col-md-4
+          .card.testimonial-card
+            .card-up.aqua-gradient(style='height: 12rem; border-radius: 0 4rem;')
+            .avatar.mx-auto
+              img.rounded-circle.mx-auto.card-img-overlay.img-responsive(src='https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg' style='height: 200px;' alt='Example photo')
+            .card-body
+              h4.card-title.mt-1.pt-3.pl-3 John Doe
+              hr
+              p
+                i.fas.fa-quote-left
+                |  Lorem ipsum dolor sit amet,
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;consectetur adipisicing elit. Eos, adipisci.
+        .carousel-item.col-md-4
+          .card.testimonial-card
+            .card-up.blue-gradient(style='height: 12rem; border-radius: 0 4rem;')
+            .avatar.mx-auto
+              img.rounded-circle.mx-auto.card-img-overlay.img-responsive(src='https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg' style='height: 200px;' alt='Example photo')
+            .card-body
+              h4.card-title.mt-1.pt-3.pl-3 John Doe
+              hr
+              p
+                i.fas.fa-quote-left
+                |  Lorem ipsum dolor sit amet,
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;consectetur adipisicing elit. Eos, adipisci.
+        .carousel-item.col-md-4
+          .card.testimonial-card
+            .card-up.purple-gradient(style='height: 12rem; border-radius: 0 4rem;')
+            .avatar.mx-auto
+              img.rounded-circle.mx-auto.card-img-overlay.img-responsive(src='https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg' style='height: 200px;' alt='Example photo')
+            .card-body
+              h4.card-title.mt-1.pt-3.pl-3 John Doe
+              hr
+              p
+                i.fas.fa-quote-left
+                |  Lorem ipsum dolor sit amet,
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;consectetur adipisicing elit. Eos, adipisci.
+        .carousel-item.col-md-4
+          .card.testimonial-card
+            .card-up.near-moon-gradient(style='height: 12rem; border-radius: 0 4rem;')
+            .avatar.mx-auto
+              img.rounded-circle.mx-auto.card-img-overlay.img-responsive(src='https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg' style='height: 200px;' alt='Example photo')
+            .card-body
+              h4.card-title.mt-1.pt-3.pl-3 John Doe
+              hr
+              p
+                i.fas.fa-quote-left
+                |  Lorem ipsum dolor sit amet,
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;consectetur adipisicing elit. Eos, adipisci.
+        .carousel-item.col-md-4
+          .card.testimonial-card
+            .card-up.morpheus-den-gradient(style='height: 12rem; border-radius: 0 4rem;')
+            .avatar.mx-auto
+              img.rounded-circle.mx-auto.card-img-overlay.img-responsive(src='https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg' style='height: 200px;' alt='Example photo')
+            .card-body
+              h4.card-title.mt-1.pt-3.pl-3 John Doe
+              hr
+              p
+                i.fas.fa-quote-left
+                |  Lorem ipsum dolor sit amet,
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;consectetur adipisicing elit. Eos, adipisci.
+    section.py-5.ovr.rare-wind-gradient.w-100
+    section.sec3.container-fluid.ovr.w-100.py-5
+      .container
+        h1.display-2.text-center.py-2.pb-4.text-light
+          b Our Values
+        .row
+          .col-md-4
+            .card.cloudy-knoxville-gradient.text-center
+              .card-header.heavy-rain-gradient.mb-3
+                | COMMITMENT
+              .card-body
+                p.card-text
+                  | We endeavor to always deliver what we promise you. Keeping
+                  | our promises and committing a great service is our utmost
+                  | priority even if it means to tell you what&apos;s not in your
+                  | best interest.
+          .col-md-4
+            .card.text-center.cloudy-knoxville-gradient
+              .card-header.heavy-rain-gradient.mb-3
+                | RESPONSIVENESS
+              .card-body
+                p.card-text
+                  | Customers are our lifeblood. Without them, we&apos;re nothing.
+                  | Hence it is our priority to solve their queries with quick
+                  | responses and provide them with the best of the services
+                  | considering their requirements.
+          .col-md-4
+            .card.text-center.cloudy-knoxville-gradient
+              .card-header.heavy-rain-gradient.mb-3
+                | ACCOUNTABILITY
+              .card-body
+                p.card-text
+                  | Assuming responsibility for our actions is one of the
+                  | important value amongst our organisation. We tend to look
+                  | into your requirements, do research and then strive to
+                  | deliver you with services of your interest.

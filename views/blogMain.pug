@@ -1,0 +1,167 @@
+extends base
+
+block head
+  link(rel="stylesheet", href="/css/blog.css")
+
+block content
+  include _alert
+  section.sec1
+    #carousel-example-2.carousel.slide.carousel-fade(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#carousel-example-2' data-slide-to='0')
+        li(data-target='#carousel-example-2' data-slide-to='1')
+        li(data-target='#carousel-example-2' data-slide-to='2')
+      .carousel-inner(role='listbox')
+        .carousel-item.active
+          .view
+            img.d-block.w-100.img(src='/img/Blogimg/bagpack.jpg' alt='First slide')
+            .mask.rgba-black-light
+          .carousel-caption
+            h3.display-4 Travel Blogs
+            p.lead Experiences shared by travellers personally
+            a.btn.peach-gradient(href='/blog/travel-blog') Visit
+        .carousel-item
+          .view
+            img.d-block.w-100.img(src='/img/place/tosh.jpg' alt='Second slide')
+            .mask.rgba-black-strong
+          .carousel-caption
+            h3.display-4 Cultural Blogs
+            p.lead
+              | The pahadi culture that we need to save and make people realise
+              | the beauty of it
+            a.btn.blue-gradient(href='/blog/cultural-blog') Visit
+        .carousel-item
+          .view
+            img.d-block.w-100.img.ab(src='/img/Blogimg/essentials.jpg' alt='Third slide')
+            .mask.rgba-black-slight
+          .carousel-caption.th
+            h3.display-4 Trekking Necessities
+            p.lead
+              | For most things one should have in mind before trekking because
+              | beauty
+            a.btn.young-passion-gradient(href='/blog/trekking-necessities') Visit
+      a.carousel-control-prev(href='#carousel-example-2' role='button' data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carousel-example-2' role='button' data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+  section.w-100.mt-5.mb-3.row
+    h1.mb-2.px-5.elegant-color.mx-auto.ron
+      u.text-center.px-5.py-2.mx-auto.text-light Some of the top picks
+  section.m-5
+    #multi-item-example.carousel.slide.mb-4.carousel-multi-item(data-ride='carousel')
+      .carousel-inner(role='listbox')
+        .carousel-item.active
+          .row
+            .col-md-4
+              .card.mb-2
+                .view.overlay
+                  img.card-img-top(src='/img/Blogimg/Endurance%20tr.jpg' alt='Card image cap')
+                  a
+                    .mask.rgba-white-slight
+                .card-body.elegant-color.white-text.rounded-bottom
+                  h4.card-title
+                    | TREKKING: IMPORTANCE OF ENDURANCE AND HOW TO TRAIN FOR IT
+                  p.card-text.white-text.mb-4
+                    | For years people have been wondering what trekking
+                    | actually is ? Well the simplest answer to this is,
+                    | &rdquo;walking for longer distances through the mountain ranges
+                    | is called trekking.&rdquo; But , for a person that&rsquo;s obsessed
+                    | with trekking, it would hold a very different meaning.
+                  span.d-flex.justify-content-end
+                    a.white-text(href='#!')
+                      h5.badge(style='font-size: 130%;')
+                        | Read more
+                        i.fas.fa-angle-double-right
+            .col-md-4
+              .card.mb-2
+                .view.overlay
+                  img.card-img-top(src='/img/place/Kheerganga.jpg' alt='Card image cap')
+                  a
+                    .mask.rgba-white-slight
+                .card-body.elegant-color.white-text.rounded-bottom
+                  h4.card-title Kasol-Kheerganga Travel Blog
+                  p.card-text.white-text.mb-4
+                    | Kasol to Kheerganga is an aesthetically pleasing, soothing
+                    | trekking experience that is really meant for all kinds of
+                    | trekkers with all kinds of experiences-beginner or
+                    | advanced. I had the time of my life because I was
+                    | accompanied by friends and all.
+                  span.d-flex.justify-content-end
+                    a.white-text(href='#!')
+                      h5.badge(style='font-size: 130%;')
+                        | Read more
+                        i.fas.fa-angle-double-right
+            .col-md-4
+              .card.mb-2
+                .view.overlay
+                  img.card-img-top(src='/img/Blogimg/Altitude%20sickness.jpg' alt='Card image cap')
+                  a
+                    .mask.rgba-white-slight
+                .card-body.elegant-color.white-text.rounded-bottom
+                  h4.card-title Altitude Sickness:
+                  p.card-text.white-text.mb-4
+                    | Trekking is not cool?? Then here&rsquo;s how you can make it
+                    | beautiful.
+                  span.d-flex.justify-content-end
+                    a.white-text(href='#!')
+                      h5.badge(style='font-size: 130%;')
+                        | Read more
+                        i.fas.fa-angle-double-right
+        .carousel-item
+          .row
+            .col-md-4
+              .card.mb-2
+                .view.overlay
+                  img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg' alt='Card image cap')
+                  a
+                    .mask.rgba-white-slight
+                .card-body.elegant-color.white-text.rounded-bottom
+                  h4.card-title Card title
+                  p.card-text.white-text.mb-4
+                    | Some quick example text to build on the card title and
+                    | make up the bulk of the card&apos;s content.
+                  span.d-flex.justify-content-end
+                    a.white-text(href='#!')
+                      h5.badge(style='font-size: 130%;')
+                        | Read more
+                        i.fas.fa-angle-double-right
+            .col-md-4
+              .card.mb-2
+                .view.overlay
+                  img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg' alt='Card image cap')
+                  a
+                    .mask.rgba-white-slight
+                .card-body.elegant-color.white-text.rounded-bottom
+                  h4.card-title Card title
+                  p.card-text.white-text.mb-4
+                    | Some quick example text to build on the card title and
+                    | make up the bulk of the card&apos;s content.
+                  span.d-flex.justify-content-end
+                    a.white-text(href='#!')
+                      h5.badge(style='font-size: 130%;')
+                        | Read more
+                        i.fas.fa-angle-double-right
+            .col-md-4
+              .card.mb-2
+                .view.overlay
+                  img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg' alt='Card image cap')
+                  a
+                    .mask.rgba-white-slight
+                .card-body.elegant-color.white-text.rounded-bottom
+                  h4.card-title Card title
+                  p.card-text.white-text.mb-4
+                    | Some quick example text to build on the card title and
+                    | make up the bulk of the card&apos;s content.
+                  span.d-flex.justify-content-end
+                    a.white-text(href='#!')
+                      h5.badge(style='font-size: 130%;')
+                        | Read more
+                        i.fas.fa-angle-double-right
+    .controls-top.mx-auto.text-center.p-2
+      a.btn-floating(href='#multi-item-example' data-slide='prev')
+        i.fas.fa-chevron-left.elegant-color.p-2.rounded.text-light.fa-2x
+      | &nbsp;&nbsp;&nbsp;
+      a.btn-floating(href='#multi-item-example' data-slide='next')
+        i.fas.fa-chevron-right.elegant-color.p-2.rounded.text-light.fa-2x

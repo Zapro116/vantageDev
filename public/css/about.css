@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#navbarNav .navbar-nav .active {
+  border-bottom: 3px solid white;
+}
+
+header nav {
+  background-color: black;
+}
+
+header nav .uniq_no li:nth-child(2) {
+  border-bottom: 3px solid white;
+  font-weight: 600;
+}
+
+.nava {
+  border-bottom: 3px solid transparent;
+}
+
+.nava:hover {
+  border-bottom: 3px solid white;
+}
+
+.subs {
+  margin: 0 !important;
+  padding: 0;
+  overflow: hidden;
+}
+
+.sec1 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../img/place/hampta.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  overflow: none;
+  height: 85vh;
+}
+
+.ovr {
+  margin: auto 0!important;
+}
+
+.card {
+  border-radius: 2rem;
+  opacity: 0.85;
+  z-index: 20;
+}
+
+.sec2 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../img/place/kedarkanth.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fa:hover {
+  color: firebrick !important;
+}
+
+.h2 {
+  padding-top: 30vh;
+  color: white;
+}
+
+.img2 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+  border: 0.4rem solid firebrick;
+}
+
+.sec3 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../img/place/Kheerganga.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.dest {
+  border-left: 3px solid transparent;
+}
+
+.dest:hover {
+  border-left: 3px solid firebrick;
+}
+
+.card-header {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #ababab;
+  border-radius: 2rem!important;
+}
+
+.card-img-top {
+  margin: 0;
+  border-radius: 4rem!important;
+}
+
+.card {
+  border-radius: 4.5rem!important;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /* show 3 items */
+  .carousel-inner .active, .carousel-inner .active+.carousel-item, .carousel-inner .active+.carousel-item+.carousel-item {
+    display: block;
+  }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left), .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item, .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* left or forward direction */
+  .active.carousel-item-left+.carousel-item-next.carousel-item-left, .carousel-item-next.carousel-item-left+.carousel-item, .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item, .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  .carousel-item {
+    margin-right: auto !important;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right+.carousel-item-prev.carousel-item-right, .carousel-item-prev.carousel-item-right+.carousel-item, .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item, .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+.foot {
+  background-color: #000;
+}

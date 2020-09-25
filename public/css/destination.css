@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#navbarNav .navbar-nav .active {
+	border-bottom: 3px solid white;
+}
+
+/* Yaha se where to go ka */
+
+#where {
+	background-color: #3467eb;
+}
+
+header nav ul li:nth-child(4) {
+	border-bottom: 3px solid white;
+	font-weight: 600;
+}
+
+/* Yaha se header ka bg-color change hoga */
+
+header nav {
+	background-color: black;
+}
+
+.nava {
+	border-bottom: 3px solid transparent;
+}
+
+.nava:hover {
+	border-bottom: 3px solid white;
+}
+
+.cf {
+	background-color: #ababab;
+}
+
+.parallax1 {
+	background-image: url('/img/vantage2.jpeg');
+	height: 450px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax2 {
+	background-image: url('/img/place/narayan-gopalan-EYeG_ylIyaw-unsplash.jpg');
+	height: 450px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.image-container {
+	height: 80vh;
+	position: relative;
+}
+
+.image-container>img {
+	width: 100%;
+	height: 80vh;
+}
+
+.image-container>h1 {
+	position: absolute;
+	bottom: 0;
+	padding: 1rem;
+	background-color: #fff;
+	opacity: 0.8;
+	right: 0;
+}
+
+.image-container>h1:hover {
+	position: absolute;
+	bottom: 0;
+	padding: 1rem;
+	background-color: #fff;
+	opacity: 0.95;
+	right: 0;
+}
+
+.card {
+	border-radius: 1rem 10rem 1rem 6rem!important;
+}
+
+.foot {
+	background-color: #000;
+}
