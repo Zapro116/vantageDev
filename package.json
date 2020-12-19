@@ -1,5 +1,5 @@
 {
-  "name": "natours",
+  "name": "Vantage - Conquer the himalayas",
   "version": "1.0.0",
   "description": "Learning node, express and mongoDB",
   "main": "app.js",
@@ -11,7 +11,7 @@
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
     "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
   },
-  "author": "Jonas Schmedtmann",
+  "author": "Hariom Chaurasia",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
